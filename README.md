@@ -96,3 +96,41 @@ Streamlit Components
 ```bash
 pip install streamlit_pandas_profiling
 ```
+
+### Day 15
+st.latex display mathematical expressions formatted as LaTeX.
+
+```python
+import streamlit as st
+
+st.header('st.latex')
+
+st.latex(r'''
+     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+     \sum_{k=0}^{n-1} ar^k =
+     a \left(\frac{1-r^{n}}{1-r}\right)
+     ''')
+```
+
+### Day 16 
+Customizing the theme of Streamlit apps .
+Customizing the hex code inside the .streamlit/config.html file 
+
+### Day 17 
+st.secrets allows you to store confidential information such as API keys, db passwords or other credentials.
+
+### Day 18
+st.file_uploader displays a file uploader widget
+
+By default, uploaded files are limited to 200MB. You can configure this using the server.maxUploadSize config option
+
+### Day 19
+Layout Streamlit app
+
+st.set_page_config(layout="wide") - Displays the contents of the app in wide mode (otherwise by default, the contents are encapsulated in a fixed width box.)
+
+st.sidebar - Places the widgets or text/image displays in the sidebar.
+
+st.expander - Places text/image displays inside a collapsible container box.
+
+st.columns - Creates a tabular space (or column) within which contents can be placed inside.
