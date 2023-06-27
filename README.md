@@ -134,3 +134,23 @@ st.sidebar - Places the widgets or text/image displays in the sidebar.
 st.expander - Places text/image displays inside a collapsible container box.
 
 st.columns - Creates a tabular space (or column) within which contents can be placed inside.
+
+### Day 20
+Download the insight face API
+```bash   
+pip install insightface
+```
+### Day 21
+st.progress displays a progress bar that updates graphically as the iteration progresses 
+### Day 22
+st.form creates a form that batches elements together with a Submit button
+- An user interacts with a widget , the Streamlit app is rerun.
+To add elements to a form object, you can use the with notation (preferred) or you could use it as an object notation by just calling methods directly on the form (by first assigning it to a variable and subsequently applying Streamlit methods on it). See in the example app.
+
+Forms have a few constraints:
+
+Every form must contain a st.form_submit_button.
+st.button and st.download_button cannot be added to a form.
+Forms can appear anywhere in your app (sidebar, columns, etc), but they cannot be embedded inside other forms.
+
+### Day 23
