@@ -190,3 +190,22 @@ surname = st.experimental_get_query_params()['surname'][0]
 st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
+### Day 24
+st.cache allows you to optimize the performance of your app
+
+When you mark a function with the @st.cache decorator, it tells Streamlit that whenever the function is called it needs to check a few things:
+
+- The input parameters that you called the function with
+
+- The value of any external - variable used in the function
+
+- The body of the function
+
+- The body of any function used inside the cached function
+
+### Day 25
+st.session_state 
+
+st.session_state allows the implementation of session state in a Streamlit app.
+
+
